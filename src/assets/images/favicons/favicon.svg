@@ -1,0 +1,24 @@
+<svg width="100" height="100" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-size: 9px;
+      text-anchor: middle;
+    }
+
+    #white {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #white {
+        display: initial;
+      }
+
+      #black {
+        display: none;
+      }
+    }
+  </style>
+  <text y="8" x="5" id="black">🐀</text>
+  <text y="8" x="5" id="white">🐁</text>
+</svg>

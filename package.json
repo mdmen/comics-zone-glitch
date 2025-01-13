@@ -3,7 +3,7 @@
   "private": true,
   "title": "Comics Zone: Multiverse",
   "description": "An attempt to create HTML5 spin-off for the great SEGA game called Comix Zone",
-  "homepage": "https://comics-zone-multiverse.github.io",
+  "homepage": "https://github.com/mdmen/Comics-Zone-Multiverse",
   "author": "Dmitry Menov (https://github.com/mdmen)",
   "license": "See license in LICENSE.md",
   "scripts": {

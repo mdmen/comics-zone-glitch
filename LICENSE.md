@@ -4,3 +4,7 @@ The media assets (some are edited and/or packed into sprites) are taken from the
 
 - [Comix Zone](https://en.wikipedia.org/wiki/Comix_Zone) (SEGA)
 - ...
+
+Other credits
+
+- ...

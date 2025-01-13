@@ -20,21 +20,23 @@ export class Sound {
     this.stopEvent.notify(this);
   };
 
+  private createSourceNode() {
+    const context = this.layer.getContext();
+    const sourceNode = new AudioBufferSourceNode(context, {
+      buffer: this.buffer,
+    });
+
+    sourceNode.connect(this.layer.getGainNode());
+    sourceNode.addEventListener('ended', this.onStop);
+
+    this.loop && (sourceNode.loop = true);
+
+    return sourceNode;
+  }
+
   public play() {
     try {
-      if (!this.sourceNode) {
-        const context = this.layer.getContext();
-        const sourceNode = new AudioBufferSourceNode(context, {
-          buffer: this.buffer,
-        });
-
-        sourceNode.connect(this.layer.getGainNode());
-        sourceNode.addEventListener('ended', this.onStop);
-
-        this.loop && (sourceNode.loop = true);
-        this.sourceNode = sourceNode;
-      }
-
+      this.sourceNode ||= this.createSourceNode();
       this.sourceNode.start();
 
       this.playEvent.notify(this);

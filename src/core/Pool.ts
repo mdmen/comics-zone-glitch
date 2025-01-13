@@ -1,6 +1,6 @@
 interface PoolObject {
-  update(step: number): void;
-  isActive(): boolean;
+  active: boolean;
+  reset(): void;
 }
 
 interface Options {
@@ -114,13 +114,6 @@ export class Pool {
 
     const [id] = this.nonActiveObjects;
     return this.objects.get(id) as PoolObject;
-  }
-
-  update(step: number) {
-    this.objects.forEach((object, id) => {
-      object.update(step);
-      this.updateNonActives(object, id);
-    });
   }
 
   destroy() {

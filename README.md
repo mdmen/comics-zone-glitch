@@ -1,8 +1,6 @@
-<img src="./images/header.webp" width="100%" alt="Readme banner">
+<img src="./images/header.webp" width="100%" alt="">
 
 # Comics Zone: Multiverse
-
-[![GitHub CI status](https://img.shields.io/github/actions/workflow/status/mdmen/comix-zone-glitch/ci.yaml?branch=main&label=CI&logo=Github)](https://github.com/mdmen/comix-zone-glitch/actions/workflows/ci.yaml)
 
 Description
 
@@ -22,10 +20,7 @@ Description
 
 ## Technical features
 
-- Custom game engine
-- Can be rendered using WebGL, WebGPU, 2D Canvas or HTML/CSS
-- Keyboard/Gamepad support with key bindings
-- ...
+...
 
 ## License
 
